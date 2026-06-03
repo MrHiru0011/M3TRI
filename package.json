@@ -1,0 +1,51 @@
+{
+  "name": "im3-cli",
+  "version": "1.0.0",
+  "description": "CLI Tool untuk cek dan beli paket IM3 (Indosat Ooredoo Hutchison)",
+  "main": "dist/index.js",
+  "bin": {
+    "im3": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [
+    "im3",
+    "indosat",
+    "ooredoo",
+    "hutchison",
+    "cli",
+    "paket-data",
+    "pulsa"
+  ],
+  "author": "IM3 CLI Tool",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "ora": "^5.4.1",
+    "inquirer": "^8.2.6",
+    "fs-extra": "^11.1.1",
+    "node-cache": "^5.1.2",
+    "qrcode-terminal": "^0.12.0",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/qrcode-terminal": "^0.12.2",
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
